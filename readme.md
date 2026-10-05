@@ -22,6 +22,16 @@ O script irá exportar:
 - `transicao_daft_punk.mid`: O arquivo MIDI contendo a transição evolutiva.
 - `ga_convergence_curve.png` e `ga_convergence_curve.pdf`: Gráficos científicos documentando a queda da função de perda (fitness) ao longo das gerações.
 
+### Síntese de Áudio com o synth.py
+
+Após a geração do arquivo `transicao_daft_punk.mid`, você pode convertê-lo em um arquivo de áudio final (`track_final.wav`) utilizando o script `synth.py`. Este script utiliza a ferramenta `fluidsynth` (que deve estar instalada e configurada no seu sistema) para realizar a conversão com uma taxa de amostragem de 44100 Hz. 
+
+O script requer que o arquivo SoundFont `Vintage Dreams Waves v2.sf2` esteja presente no mesmo diretório. Para gerar o áudio, execute:
+
+```bash
+python synth.py
+```
+
 **Nota sobre os Áudios:** Conforme os requisitos do trabalho, as versões convertidas em áudio sintetizado a partir das saídas MIDI (com variações na taxa de mutação) encontram-se na pasta correspondente do repositório.
 
 ## Declaração de Uso de Inteligência Artificial
